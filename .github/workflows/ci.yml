@@ -21,4 +21,5 @@ jobs:
     - name: Deployment
       run: |
         ls -a 
-        aws s3 sync ./static/ s3://dashboard-app-bucket-name/
+        aws s3 sync ./build/ s3://dashboard-app-bucket-name/
+        
