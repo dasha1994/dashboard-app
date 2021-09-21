@@ -12,7 +12,7 @@ Resources:
     Properties:
       BucketName: !Ref BucketName
       WebsiteConfiguration:
-        ErrorDocument: "irndex.html"
+        ErrorDocument: "index.html"
         IndexDocument: "index.html"
   
   ReadPolicy:
