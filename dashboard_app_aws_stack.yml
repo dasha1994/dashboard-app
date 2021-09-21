@@ -12,8 +12,8 @@ Resources:
     Properties:
       BucketName: !Ref BucketName
       WebsiteConfiguration:
-        ErrorDocument: "irndex.html"
-        IndexDocument: "irndex.html"
+        ErrorDocument: "index.html"
+        IndexDocument: "index.html"
   
   ReadPolicy:
     Type: "AWS::S3::BucketPolicy"
@@ -38,7 +38,7 @@ Resources:
         CustomErrorResponses:
           - ErrorCode: 403 # not found
             ResponseCode: 404
-            ResponsePagePath: "/irndex.html"
+            ResponsePagePath: "/index.html"
         DefaultCacheBehavior:
           AllowedMethods:
             - GET
